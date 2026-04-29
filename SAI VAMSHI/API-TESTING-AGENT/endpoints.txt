@@ -1,0 +1,391 @@
+Endpoint: /api/v1/policies/{id}
+Method: GET
+Required Parameters:
+  - Name: id, In: path, Required: True, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/policies/{id}
+Method: PUT
+Required Parameters:
+  - Name: id, In: path, Required: True, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/policies/{id}
+Method: DELETE
+Required Parameters:
+  - Name: id, In: path, Required: True, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/payments/{id}
+Method: GET
+Required Parameters:
+  - Name: id, In: path, Required: True, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/payments/{id}
+Method: PUT
+Required Parameters:
+  - Name: id, In: path, Required: True, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/payments/{id}
+Method: DELETE
+Required Parameters:
+  - Name: id, In: path, Required: True, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/commissions/{id}
+Method: GET
+Required Parameters:
+  - Name: id, In: path, Required: True, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/commissions/{id}
+Method: PUT
+Required Parameters:
+  - Name: id, In: path, Required: True, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/commissions/{id}
+Method: DELETE
+Required Parameters:
+  - Name: id, In: path, Required: True, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/agents/{id}
+Method: GET
+Required Parameters:
+  - Name: id, In: path, Required: True, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/agents/{id}
+Method: PUT
+Required Parameters:
+  - Name: id, In: path, Required: True, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/agents/{id}
+Method: DELETE
+Required Parameters:
+  - Name: id, In: path, Required: True, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/policies
+Method: GET
+Required Parameters:
+  - Name: page, In: query, Required: False, Type: unknown
+  - Name: size, In: query, Required: False, Type: unknown
+  - Name: sort, In: query, Required: False, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/policies
+Method: POST
+No parameters required.
+--------------------------------------------------
+Endpoint: /api/v1/policies/process-renewal-notifications
+Method: POST
+No parameters required.
+--------------------------------------------------
+Endpoint: /api/v1/policies/process-expired
+Method: POST
+No parameters required.
+--------------------------------------------------
+Endpoint: /api/v1/payments
+Method: GET
+Required Parameters:
+  - Name: page, In: query, Required: False, Type: unknown
+  - Name: size, In: query, Required: False, Type: unknown
+  - Name: sort, In: query, Required: False, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/payments
+Method: POST
+No parameters required.
+--------------------------------------------------
+Endpoint: /api/v1/payments/retry-failed
+Method: POST
+No parameters required.
+--------------------------------------------------
+Endpoint: /api/v1/payments/process-stuck
+Method: POST
+No parameters required.
+--------------------------------------------------
+Endpoint: /api/v1/payments/process-pending
+Method: POST
+No parameters required.
+--------------------------------------------------
+Endpoint: /api/v1/commissions
+Method: GET
+Required Parameters:
+  - Name: page, In: query, Required: False, Type: unknown
+  - Name: size, In: query, Required: False, Type: unknown
+  - Name: sort, In: query, Required: False, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/commissions
+Method: POST
+No parameters required.
+--------------------------------------------------
+Endpoint: /api/v1/commissions/process-pending
+Method: POST
+No parameters required.
+--------------------------------------------------
+Endpoint: /api/v1/commissions/process-payments
+Method: POST
+No parameters required.
+--------------------------------------------------
+Endpoint: /api/v1/commissions/process-expired
+Method: POST
+No parameters required.
+--------------------------------------------------
+Endpoint: /api/v1/commissions/calculate
+Method: POST
+Required Parameters:
+  - Name: policyId, In: query, Required: True, Type: unknown
+  - Name: agentId, In: query, Required: True, Type: unknown
+  - Name: commissionType, In: query, Required: True, Type: unknown
+  - Name: customRate, In: query, Required: False, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/agents
+Method: GET
+Required Parameters:
+  - Name: page, In: query, Required: False, Type: unknown
+  - Name: size, In: query, Required: False, Type: unknown
+  - Name: sort, In: query, Required: False, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/agents
+Method: POST
+No parameters required.
+--------------------------------------------------
+Endpoint: /api/v1/policies/{id}/status
+Method: PATCH
+Required Parameters:
+  - Name: id, In: path, Required: True, Type: unknown
+  - Name: status, In: query, Required: True, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/payments/{id}/status
+Method: PATCH
+Required Parameters:
+  - Name: id, In: path, Required: True, Type: unknown
+  - Name: status, In: query, Required: True, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/commissions/{id}/status
+Method: PATCH
+Required Parameters:
+  - Name: id, In: path, Required: True, Type: unknown
+  - Name: status, In: query, Required: True, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/agents/{id}/status
+Method: PATCH
+Required Parameters:
+  - Name: id, In: path, Required: True, Type: unknown
+  - Name: status, In: query, Required: True, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/policies/status/{status}
+Method: GET
+Required Parameters:
+  - Name: status, In: path, Required: True, Type: unknown
+  - Name: page, In: query, Required: False, Type: unknown
+  - Name: size, In: query, Required: False, Type: unknown
+  - Name: sort, In: query, Required: False, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/policies/search
+Method: GET
+Required Parameters:
+  - Name: query, In: query, Required: True, Type: unknown
+  - Name: page, In: query, Required: False, Type: unknown
+  - Name: size, In: query, Required: False, Type: unknown
+  - Name: sort, In: query, Required: False, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/policies/number/{policyNumber}
+Method: GET
+Required Parameters:
+  - Name: policyNumber, In: path, Required: True, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/policies/expiration-date-range
+Method: GET
+Required Parameters:
+  - Name: startDate, In: query, Required: True, Type: unknown
+  - Name: endDate, In: query, Required: True, Type: unknown
+  - Name: page, In: query, Required: False, Type: unknown
+  - Name: size, In: query, Required: False, Type: unknown
+  - Name: sort, In: query, Required: False, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/policies/effective-date-range
+Method: GET
+Required Parameters:
+  - Name: startDate, In: query, Required: True, Type: unknown
+  - Name: endDate, In: query, Required: True, Type: unknown
+  - Name: page, In: query, Required: False, Type: unknown
+  - Name: size, In: query, Required: False, Type: unknown
+  - Name: sort, In: query, Required: False, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/policies/agent/{agentId}
+Method: GET
+Required Parameters:
+  - Name: agentId, In: path, Required: True, Type: unknown
+  - Name: page, In: query, Required: False, Type: unknown
+  - Name: size, In: query, Required: False, Type: unknown
+  - Name: sort, In: query, Required: False, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/payments/status/{status}
+Method: GET
+Required Parameters:
+  - Name: status, In: path, Required: True, Type: unknown
+  - Name: page, In: query, Required: False, Type: unknown
+  - Name: size, In: query, Required: False, Type: unknown
+  - Name: sort, In: query, Required: False, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/payments/reference/{paymentReference}
+Method: GET
+Required Parameters:
+  - Name: paymentReference, In: path, Required: True, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/payments/processed-date-range
+Method: GET
+Required Parameters:
+  - Name: startDate, In: query, Required: True, Type: unknown
+  - Name: endDate, In: query, Required: True, Type: unknown
+  - Name: page, In: query, Required: False, Type: unknown
+  - Name: size, In: query, Required: False, Type: unknown
+  - Name: sort, In: query, Required: False, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/payments/date-range
+Method: GET
+Required Parameters:
+  - Name: startDate, In: query, Required: True, Type: unknown
+  - Name: endDate, In: query, Required: True, Type: unknown
+  - Name: page, In: query, Required: False, Type: unknown
+  - Name: size, In: query, Required: False, Type: unknown
+  - Name: sort, In: query, Required: False, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/payments/commission/{commissionId}
+Method: GET
+Required Parameters:
+  - Name: commissionId, In: path, Required: True, Type: unknown
+  - Name: page, In: query, Required: False, Type: unknown
+  - Name: size, In: query, Required: False, Type: unknown
+  - Name: sort, In: query, Required: False, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/payments/agent/{agentId}
+Method: GET
+Required Parameters:
+  - Name: agentId, In: path, Required: True, Type: unknown
+  - Name: page, In: query, Required: False, Type: unknown
+  - Name: size, In: query, Required: False, Type: unknown
+  - Name: sort, In: query, Required: False, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/payments/agent/{agentId}/summary
+Method: GET
+Required Parameters:
+  - Name: agentId, In: path, Required: True, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/commissions/status/{status}
+Method: GET
+Required Parameters:
+  - Name: status, In: path, Required: True, Type: unknown
+  - Name: page, In: query, Required: False, Type: unknown
+  - Name: size, In: query, Required: False, Type: unknown
+  - Name: sort, In: query, Required: False, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/commissions/policy/{policyId}
+Method: GET
+Required Parameters:
+  - Name: policyId, In: path, Required: True, Type: unknown
+  - Name: page, In: query, Required: False, Type: unknown
+  - Name: size, In: query, Required: False, Type: unknown
+  - Name: sort, In: query, Required: False, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/commissions/payment-date-range
+Method: GET
+Required Parameters:
+  - Name: startDate, In: query, Required: True, Type: unknown
+  - Name: endDate, In: query, Required: True, Type: unknown
+  - Name: page, In: query, Required: False, Type: unknown
+  - Name: size, In: query, Required: False, Type: unknown
+  - Name: sort, In: query, Required: False, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/commissions/date-range
+Method: GET
+Required Parameters:
+  - Name: startDate, In: query, Required: True, Type: unknown
+  - Name: endDate, In: query, Required: True, Type: unknown
+  - Name: page, In: query, Required: False, Type: unknown
+  - Name: size, In: query, Required: False, Type: unknown
+  - Name: sort, In: query, Required: False, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/commissions/agent/{agentId}
+Method: GET
+Required Parameters:
+  - Name: agentId, In: path, Required: True, Type: unknown
+  - Name: page, In: query, Required: False, Type: unknown
+  - Name: size, In: query, Required: False, Type: unknown
+  - Name: sort, In: query, Required: False, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/commissions/agent/{agentId}/summary
+Method: GET
+Required Parameters:
+  - Name: agentId, In: path, Required: True, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/agents/status/{status}
+Method: GET
+Required Parameters:
+  - Name: status, In: path, Required: True, Type: unknown
+  - Name: page, In: query, Required: False, Type: unknown
+  - Name: size, In: query, Required: False, Type: unknown
+  - Name: sort, In: query, Required: False, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/agents/search
+Method: GET
+Required Parameters:
+  - Name: query, In: query, Required: True, Type: unknown
+  - Name: page, In: query, Required: False, Type: unknown
+  - Name: size, In: query, Required: False, Type: unknown
+  - Name: sort, In: query, Required: False, Type: unknown
+--------------------------------------------------
+Endpoint: /api/v1/agents/code/{agentCode}
+Method: GET
+Required Parameters:
+  - Name: agentCode, In: path, Required: True, Type: unknown
+--------------------------------------------------
+Endpoint: /actuator
+Method: GET
+No parameters required.
+--------------------------------------------------
+Endpoint: /actuator/prometheus
+Method: GET
+No parameters required.
+--------------------------------------------------
+Endpoint: /actuator/metrics
+Method: GET
+No parameters required.
+--------------------------------------------------
+Endpoint: /actuator/metrics/{requiredMetricName}
+Method: GET
+Required Parameters:
+  - Name: requiredMetricName, In: path, Required: True, Type: unknown
+--------------------------------------------------
+Endpoint: /actuator/info
+Method: GET
+No parameters required.
+--------------------------------------------------
+Endpoint: /actuator/health
+Method: GET
+No parameters required.
+--------------------------------------------------
+Endpoint: /actuator/health/**
+Method: GET
+No parameters required.
+--------------------------------------------------
+Endpoint: /actuator/env
+Method: GET
+No parameters required.
+--------------------------------------------------
+Endpoint: /actuator/env/{toMatch}
+Method: GET
+Required Parameters:
+  - Name: toMatch, In: path, Required: True, Type: unknown
+--------------------------------------------------
+Endpoint: /actuator/caches
+Method: GET
+No parameters required.
+--------------------------------------------------
+Endpoint: /actuator/caches
+Method: DELETE
+No parameters required.
+--------------------------------------------------
+Endpoint: /actuator/caches/{cache}
+Method: GET
+Required Parameters:
+  - Name: cache, In: path, Required: True, Type: unknown
+--------------------------------------------------
+Endpoint: /actuator/caches/{cache}
+Method: DELETE
+Required Parameters:
+  - Name: cache, In: path, Required: True, Type: unknown
+--------------------------------------------------

@@ -1,0 +1,14 @@
+streamlit
+pandas
+docling
+scikit-learn
+requests
+python-dotenv
+numpy
+langgraph
+langchain
+langchain-community
+langchain-ollama
+fastembed
+fpdf
+matplotlib

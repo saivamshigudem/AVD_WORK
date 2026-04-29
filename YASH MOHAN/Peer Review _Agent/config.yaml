@@ -1,0 +1,51 @@
+# Azure DevOps Configuration
+azure_devops:
+  organization: "https://dev.azure.com/avdforai"  # e.g., "https://dev.azure.com/YourOrg"
+  project: "aimetlab"  # Your Azure DevOps project name
+  personal_access_token: ""  # Will be loaded from .env file
+  repository_id: ""  # Will be auto-detected or can be set manually
+
+# LLM Configuration
+llm:
+  provider: "openai"  # Options: openai, azure_openai
+  model: "gpt-4-turbo-preview"
+  temperature: 0.1
+  max_tokens: 4000
+  api_key: ""  # Will be loaded from .env file
+
+# Code Analysis Settings
+code_analysis:
+  max_files_per_review: 50
+  exclude_patterns:
+    - "**/node_modules/**"
+    - "**/__pycache__/**"
+    - "**/.git/**"
+    - "**/venv/**"
+    - "**/.env"
+  include_extensions:
+    - ".py"
+    - ".js"
+    - ".ts"
+    - ".java"
+    - ".cs"
+    - ".cpp"
+    - ".c"
+
+# Git Configuration
+git:
+  default_branch: "main"
+  commit_message_prefix: "[Peer Review Agent]"
+
+# Review Settings
+review:
+  auto_apply_fixes: false  # Set to true for auto-apply (with confirmation)
+  create_pr: true
+  pr_title_template: "Peer Review: {branch_name}"
+  pr_description_template: "Automated peer review and fixes applied by Peer Review Agent"
+
+# Report Settings
+report:
+  output_dir: "./reports"
+  include_code_snippets: true
+  include_suggestions: true
+

@@ -1,0 +1,109 @@
+{
+  "coding_standards": {
+    "indentation": {
+      "type": "spaces",
+      "size": 4,
+      "enforced": true
+    },
+    "naming_conventions": {
+      "variables": "camelCase",
+      "classes": "PascalCase",
+      "functions": "camelCase",
+      "constants": "UPPER_SNAKE_CASE",
+      "enforced": true
+    },
+    "hardcoded_strings": {
+      "allowed": false,
+      "use_constants": true,
+      "use_env_vars": true
+    },
+    "documentation": {
+      "require_docstrings": true,
+      "docstring_format": "google",
+      "min_description_length": 20
+    },
+    "error_handling": {
+      "require_try_except": true,
+      "require_logging": true,
+      "no_bare_except": true
+    },
+    "security": {
+      "no_deprecated_functions": true,
+      "no_insecure_libraries": true,
+      "validate_inputs": true,
+      "sanitize_inputs": true
+    },
+    "performance": {
+      "check_benchmarks": true,
+      "avoid_n_plus_one": true
+    },
+    "git": {
+      "branch_naming": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "commit_message_format": "^\\[.*\\].*"
+    },
+    "testing": {
+      "coverage_threshold": 80,
+      "require_unit_tests": true
+    }
+  },
+  "languages": {
+    "python": {
+      "naming_conventions": {
+        "variables": "snake_case",
+        "classes": "PascalCase",
+        "functions": "snake_case",
+        "constants": "UPPER_SNAKE_CASE"
+      },
+      "indentation": {
+        "size": 4
+      }
+    },
+    "javascript": {
+      "naming_conventions": {
+        "variables": "camelCase",
+        "classes": "PascalCase",
+        "functions": "camelCase",
+        "constants": "UPPER_SNAKE_CASE"
+      },
+      "indentation": {
+        "size": 2
+      }
+    },
+    "typescript": {
+      "naming_conventions": {
+        "variables": "camelCase",
+        "classes": "PascalCase",
+        "functions": "camelCase",
+        "constants": "UPPER_SNAKE_CASE"
+      },
+      "indentation": {
+        "size": 2
+      }
+    }
+  },
+  "azure_devops": {
+    "branch_conventions": {
+      "feature": "feature/",
+      "bugfix": "bugfix/",
+      "hotfix": "hotfix/",
+      "release": "release/"
+    },
+    "commit_message_conventions": {
+      "prefixes": [
+        "feat",
+        "fix",
+        "docs",
+        "style",
+        "refactor",
+        "test",
+        "chore"
+      ],
+      "format": "{prefix}: {description}"
+    }
+  },
+  "user_story_compliance": {
+    "require_acceptance_criteria_match": true,
+    "check_description_alignment": true,
+    "verify_functionality": true
+  }
+}

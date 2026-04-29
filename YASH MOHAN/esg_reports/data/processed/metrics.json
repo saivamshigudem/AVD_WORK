@@ -1,0 +1,23 @@
+{
+  "Apple_2025_ESG_Report.pdf": {
+    "carbon_emissions": 15110000.0,
+    "energy_usage": 3800000000.0,
+    "water_usage": 90000000000.0,
+    "waste_generated": 2148950.0,
+    "renewable_energy_percent": 100.0
+  },
+  "Google_2025_ESG_Report.pdf": {
+    "carbon_emissions": 16000000.0,
+    "energy_usage": 12000000000.0,
+    "water_usage": 9866000000.0,
+    "waste_generated": 24900.0,
+    "renewable_energy_percent": 100.0
+  },
+  "Microsoft_2025_ESG_Report.pdf": {
+    "carbon_emissions": 30000000.0,
+    "energy_usage": 8000000.0,
+    "water_usage": 3000000.0,
+    "waste_generated": 100000.0,
+    "renewable_energy_percent": 100.0
+  }
+}
